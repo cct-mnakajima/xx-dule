@@ -1,0 +1,76 @@
+.Now-border {
+  border-color: rgb(253, 41, 41);
+  border-style: solid;
+  border-width: 3px;
+
+  &.finished {
+    border-color: #688ea6;
+    border-width: 2px;
+  }
+
+  &.upcoming {
+    border-color: #ffcc00;
+  }
+}
+
+.description-area {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* 一行以上は省略 */
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  color: #000000;
+  font-size: 0.8rem !important;
+}
+
+.Card-parent {
+  position: relative;
+}
+
+.Now-icon {
+  transform: rotate(-45deg);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+
+  position: absolute;
+  top: 10px;
+  left: -48px;
+  background-color: red;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: white;
+
+  &.finished {
+    padding-left: 43px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.8rem;
+    background-color: #688ea6;
+  }
+
+  &.upload {
+    padding-left: 45px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #f2ec22;
+  }
+}
+
+.Member-only {
+  display: inline-block;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  padding-right: 6px;
+}
+
+.Member-only-text {
+  color: rgb(0, 141, 118);
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+}
+
+.Member-only-icon {
+  color: rgb(0, 141, 118) !important;
+  vertical-align: text-bottom;
+}
